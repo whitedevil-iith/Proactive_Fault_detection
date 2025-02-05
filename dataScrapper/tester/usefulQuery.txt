@@ -1,0 +1,249 @@
+Timestamp
+sum(irate(container_cpu_user_seconds_total{name="grafana",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="grafana",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="grafana",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="grafana",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="grafana",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="grafana",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="grafana",instance="cadvisor:8080"} - container_memory_cache{name="grafana",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="influxdb",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="influxdb",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="influxdb",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="influxdb",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="influxdb",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="influxdb",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="influxdb",instance="cadvisor:8080"} - container_memory_cache{name="influxdb",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="metrics_server",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="metrics_server",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="metrics_server",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="metrics_server",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="metrics_server",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="metrics_server",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="metrics_server",instance="cadvisor:8080"} - container_memory_cache{name="metrics_server",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="ue3",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="ue3",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ue3",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="ue3",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ue3",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="ue3",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="ue3",instance="cadvisor:8080"} - container_memory_cache{name="ue3",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="ue2",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="ue2",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ue2",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="ue2",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ue2",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="ue2",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="ue2",instance="cadvisor:8080"} - container_memory_cache{name="ue2",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="ue1",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="ue1",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ue1",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="ue1",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ue1",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="ue1",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="ue1",instance="cadvisor:8080"} - container_memory_cache{name="ue1",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="ue0",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="ue0",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ue0",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="ue0",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ue0",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="ue0",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="ue0",instance="cadvisor:8080"} - container_memory_cache{name="ue0",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="du3",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="du3",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="du3",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="du3",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="du3",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="du3",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="du3",instance="cadvisor:8080"} - container_memory_cache{name="du3",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="du2",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="du2",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="du2",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="du2",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="du2",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="du2",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="du2",instance="cadvisor:8080"} - container_memory_cache{name="du2",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="du1",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="du1",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="du1",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="du1",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="du1",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="du1",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="du1",instance="cadvisor:8080"} - container_memory_cache{name="du1",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="du0",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="du0",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="du0",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="du0",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="du0",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="du0",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="du0",instance="cadvisor:8080"} - container_memory_cache{name="du0",instance="cadvisor:8080"})
+count(container_last_seen{name="cu3",instance="cadvisor:8080"}) by (instance)
+sum(irate(container_cpu_user_seconds_total{name="cu3",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="cu3",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="cu3",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="cu3",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="cu3",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="cu3",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="cu3",instance="cadvisor:8080"} - container_memory_cache{name="cu3",instance="cadvisor:8080"})
+count(container_last_seen{name="cu2",instance="cadvisor:8080"}) by (instance)
+sum(irate(container_cpu_user_seconds_total{name="cu2",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="cu2",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="cu2",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="cu2",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="cu2",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="cu2",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="cu2",instance="cadvisor:8080"} - container_memory_cache{name="cu2",instance="cadvisor:8080"})
+count(container_last_seen{name="cu1",instance="cadvisor:8080"}) by (instance)
+sum(irate(container_cpu_user_seconds_total{name="cu1",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="cu1",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="cu1",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="cu1",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="cu1",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="cu1",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="cu1",instance="cadvisor:8080"} - container_memory_cache{name="cu1",instance="cadvisor:8080"})
+count(container_last_seen{name="cu0",instance="cadvisor:8080"}) by (instance)
+sum(irate(container_cpu_user_seconds_total{name="cu0",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="cu0",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="cu0",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="cu0",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="cu0",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="cu0",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="cu0",instance="cadvisor:8080"} - container_memory_cache{name="cu0",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="open5gs",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="open5gs",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="open5gs",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="open5gs",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="open5gs",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="open5gs",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="open5gs",instance="cadvisor:8080"} - container_memory_cache{name="open5gs",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="node-exporter",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="node-exporter",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="node-exporter",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="node-exporter",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="node-exporter",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="node-exporter",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="node-exporter",instance="cadvisor:8080"} - container_memory_cache{name="node-exporter",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="cadvisor",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="cadvisor",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="cadvisor",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="cadvisor",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="cadvisor",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="cadvisor",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="cadvisor",instance="cadvisor:8080"} - container_memory_cache{name="cadvisor",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="prometheus",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="prometheus",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="prometheus",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="prometheus",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="prometheus",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="prometheus",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="prometheus",instance="cadvisor:8080"} - container_memory_cache{name="prometheus",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="ric_submgr",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="ric_submgr",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ric_submgr",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="ric_submgr",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ric_submgr",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="ric_submgr",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="ric_submgr",instance="cadvisor:8080"} - container_memory_cache{name="ric_submgr",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="ric_e2term",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="ric_e2term",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ric_e2term",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="ric_e2term",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ric_e2term",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="ric_e2term",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="ric_e2term",instance="cadvisor:8080"} - container_memory_cache{name="ric_e2term",instance="cadvisor:8080"})
+((sum(container_memory_usage_bytes{name="python_xapp_runner",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="python_xapp_runner",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="python_xapp_runner",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="python_xapp_runner",instance="cadvisor:8080"}) by (instance)
+sum  (container_memory_usage_bytes{name="python_xapp_runner",instance="cadvisor:8080"} - container_memory_cache{name="python_xapp_runner",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="ric_e2mgr",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="ric_e2mgr",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ric_e2mgr",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="ric_e2mgr",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ric_e2mgr",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="ric_e2mgr",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="ric_e2mgr",instance="cadvisor:8080"} - container_memory_cache{name="ric_e2mgr",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="ric_appmgr",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="ric_appmgr",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ric_appmgr",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="ric_appmgr",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ric_appmgr",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="ric_appmgr",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="ric_appmgr",instance="cadvisor:8080"} - container_memory_cache{name="ric_appmgr",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="ric_rtmgr_sim",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="ric_rtmgr_sim",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ric_rtmgr_sim",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="ric_rtmgr_sim",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ric_rtmgr_sim",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="ric_rtmgr_sim",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="ric_rtmgr_sim",instance="cadvisor:8080"} - container_memory_cache{name="ric_rtmgr_sim",instance="cadvisor:8080"})
+sum(irate(container_cpu_user_seconds_total{name="ric_dbaas",instance="cadvisor:8080"}[5m]) * 100)by (instance) / sum(machine_cpu_cores{instance="cadvisor:8080"}) by (instance)
+((sum(container_memory_usage_bytes{name="ric_dbaas",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ric_dbaas",instance="cadvisor:8080"}) by (instance)) / sum(machine_memory_bytes{instance="cadvisor:8080"}) by (instance)) * 100
+sum(container_memory_usage_bytes{name="ric_dbaas",instance="cadvisor:8080"}) by (instance) - sum(container_memory_cache{name="ric_dbaas",instance="cadvisor:8080"}) by (instance)
+sum  (irate(container_cpu_user_seconds_total{name="ric_dbaas",instance="cadvisor:8080"}[5m]) * 100)
+sum  (container_memory_usage_bytes{name="ric_dbaas",instance="cadvisor:8080"} - container_memory_cache{name="ric_dbaas",instance="cadvisor:8080"})
+irate(node_pressure_cpu_waiting_seconds_total{instance="node-exporter:9100",job="node"}[10s])
+irate(node_pressure_memory_waiting_seconds_total{instance="node-exporter:9100",job="node"}[10s])
+irate(node_pressure_io_waiting_seconds_total{instance="node-exporter:9100",job="node"}[10s])
+100 * (1 - avg(rate(node_cpu_seconds_total{mode="idle", instance="node-exporter:9100"}[10s])))
+scalar(node_load1{instance="node-exporter:9100",job="node"}) * 100 / count(count(node_cpu_seconds_total{instance="node-exporter:9100",job="node"}) by (cpu))
+((node_memory_MemTotal_bytes{instance="node-exporter:9100", job="node"} - node_memory_MemFree_bytes{instance="node-exporter:9100", job="node"}) / node_memory_MemTotal_bytes{instance="node-exporter:9100", job="node"}) * 100
+(1 - (node_memory_MemAvailable_bytes{instance="node-exporter:9100", job="node"} / node_memory_MemTotal_bytes{instance="node-exporter:9100", job="node"})) * 100
+((node_memory_SwapTotal_bytes{instance="node-exporter:9100",job="node"} - node_memory_SwapFree_bytes{instance="node-exporter:9100",job="node"}) / (node_memory_SwapTotal_bytes{instance="node-exporter:9100",job="node"})) * 100
+node_time_seconds{instance="node-exporter:9100",job="node"} - node_boot_time_seconds{instance="node-exporter:9100",job="node"}
+sum(irate(node_cpu_seconds_total{instance="node-exporter:9100",job="node", mode="system"}[10s])) / scalar(count(count(node_cpu_seconds_total{instance="node-exporter:9100",job="node"}) by (cpu)))
+sum(irate(node_cpu_seconds_total{instance="node-exporter:9100",job="node", mode="user"}[10s])) / scalar(count(count(node_cpu_seconds_total{instance="node-exporter:9100",job="node"}) by (cpu)))
+sum(irate(node_cpu_seconds_total{instance="node-exporter:9100",job="node", mode="iowait"}[10s])) / scalar(count(count(node_cpu_seconds_total{instance="node-exporter:9100",job="node"}) by (cpu)))
+sum(irate(node_cpu_seconds_total{instance="node-exporter:9100",job="node", mode=~".*irq"}[10s])) / scalar(count(count(node_cpu_seconds_total{instance="node-exporter:9100",job="node"}) by (cpu)))
+sum(irate(node_cpu_seconds_total{instance="node-exporter:9100",job="node",  mode!='idle',mode!='user',mode!='system',mode!='iowait',mode!='irq',mode!='softirq'}[10s])) / scalar(count(count(node_cpu_seconds_total{instance="node-exporter:9100",job="node"}) by (cpu)))
+sum(irate(node_cpu_seconds_total{instance="node-exporter:9100",job="node", mode="idle"}[10s])) / scalar(count(count(node_cpu_seconds_total{instance="node-exporter:9100",job="node"}) by (cpu)))
+node_memory_MemTotal_bytes{instance="node-exporter:9100",job="node"} - node_memory_MemFree_bytes{instance="node-exporter:9100",job="node"} - (node_memory_Cached_bytes{instance="node-exporter:9100",job="node"} + node_memory_Buffers_bytes{instance="node-exporter:9100",job="node"} + node_memory_SReclaimable_bytes{instance="node-exporter:9100",job="node"})
+node_memory_Cached_bytes{instance="node-exporter:9100",job="node"} + node_memory_Buffers_bytes{instance="node-exporter:9100",job="node"} + node_memory_SReclaimable_bytes{instance="node-exporter:9100",job="node"}
+node_memory_MemFree_bytes{instance="node-exporter:9100",job="node"}
+(node_memory_SwapTotal_bytes{instance="node-exporter:9100",job="node"} - node_memory_SwapFree_bytes{instance="node-exporter:9100",job="node"})
+irate(node_network_receive_bytes_total{instance="node-exporter:9100",job="node"}[10s])*8
+irate(node_network_transmit_bytes_total{instance="node-exporter:9100",job="node"}[10s])*8
+sum(irate(node_cpu_seconds_total{instance="node-exporter:9100",job="node", mode="nice"}[10s])) / scalar(count(count(node_cpu_seconds_total{instance="node-exporter:9100",job="node"}) by (cpu)))
+sum by(instance) (irate(node_cpu_seconds_total{instance="node-exporter:9100",job="node", mode="iowait"}[10s])) / scalar(count(count(node_cpu_seconds_total{instance="node-exporter:9100",job="node"}) by (cpu)))
+sum(irate(node_cpu_seconds_total{instance="node-exporter:9100",job="node", mode="softirq"}[10s])) / scalar(count(count(node_cpu_seconds_total{instance="node-exporter:9100",job="node"}) by (cpu)))
+sum(irate(node_cpu_seconds_total{instance="node-exporter:9100",job="node", mode="steal"}[10s])) / scalar(count(count(node_cpu_seconds_total{instance="node-exporter:9100",job="node"}) by (cpu)))
+node_memory_MemTotal_bytes{instance="node-exporter:9100",job="node"} - node_memory_MemFree_bytes{instance="node-exporter:9100",job="node"} - node_memory_Buffers_bytes{instance="node-exporter:9100",job="node"} - node_memory_Cached_bytes{instance="node-exporter:9100",job="node"} - node_memory_Slab_bytes{instance="node-exporter:9100",job="node"} - node_memory_PageTables_bytes{instance="node-exporter:9100",job="node"} - node_memory_SwapCached_bytes{instance="node-exporter:9100",job="node"}
+node_memory_PageTables_bytes{instance="node-exporter:9100",job="node"}
+node_memory_SwapCached_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Slab_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Cached_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Buffers_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Inactive_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Active_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Committed_AS_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Inactive_file_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Inactive_anon_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Active_file_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Active_anon_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Writeback_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Dirty_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Mapped_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Shmem_bytes{instance="node-exporter:9100",job="node"}
+node_memory_SUnreclaim_bytes{instance="node-exporter:9100",job="node"}
+node_memory_SReclaimable_bytes{instance="node-exporter:9100",job="node"}
+node_memory_VmallocUsed_bytes{instance="node-exporter:9100",job="node"}
+node_memory_AnonHugePages_bytes{instance="node-exporter:9100",job="node"}
+node_memory_AnonPages_bytes{instance="node-exporter:9100",job="node"}
+node_memory_KernelStack_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Unevictable_bytes{instance="node-exporter:9100",job="node"}
+node_memory_Mlocked_bytes{instance="node-exporter:9100",job="node"}
+irate(node_vmstat_pgpgin{instance="node-exporter:9100",job="node"}[10s])
+irate(node_vmstat_pgpgout{instance="node-exporter:9100",job="node"}[10s])
+irate(node_vmstat_pswpin{instance="node-exporter:9100",job="node"}[10s])
+irate(node_vmstat_pswpout{instance="node-exporter:9100",job="node"}[10s])
+irate(node_vmstat_pgfault{instance="node-exporter:9100",job="node"}[10s])
+irate(node_vmstat_pgmajfault{instance="node-exporter:9100",job="node"}[10s])
+irate(node_vmstat_pgfault{instance="node-exporter:9100",job="node"}[10s])  - irate(node_vmstat_pgmajfault{instance="node-exporter:9100",job="node"}[10s])
+irate(node_vmstat_oom_kill{instance="node-exporter:9100",job="node"}[10s])
+node_timex_maxerror_seconds{instance="node-exporter:9100",job="node"}
+node_timex_frequency_adjustment_ratio{instance="node-exporter:9100",job="node"}
+node_procs_blocked{instance="node-exporter:9100",job="node"}
+node_procs_running{instance="node-exporter:9100",job="node"}
+irate(node_forks_total{instance="node-exporter:9100",job="node"}[10s])
+irate(node_schedstat_running_seconds_total{instance="node-exporter:9100",job="node"}[10s])
+irate(node_schedstat_waiting_seconds_total{instance="node-exporter:9100",job="node"}[10s])
+irate(node_context_switches_total{instance="node-exporter:9100",job="node"}[10s])
+irate(node_intr_total{instance="node-exporter:9100",job="node"}[10s])
+node_load1{instance="node-exporter:9100",job="node"}
+node_load5{instance="node-exporter:9100",job="node"}
+node_load15{instance="node-exporter:9100",job="node"}
+rate(node_pressure_cpu_waiting_seconds_total{instance="node-exporter:9100",job="node"}[10s])
+rate(node_pressure_memory_waiting_seconds_total{instance="node-exporter:9100",job="node"}[10s])
+rate(node_pressure_memory_stalled_seconds_total{instance="node-exporter:9100",job="node"}[10s])
+rate(node_pressure_io_waiting_seconds_total{instance="node-exporter:9100",job="node"}[10s])
+rate(node_pressure_io_stalled_seconds_total{instance="node-exporter:9100",job="node"}[10s])
+irate(node_schedstat_timeslices_total{instance="node-exporter:9100",job="node"}[10s])
+irate(process_cpu_seconds_total{instance="node-exporter:9100",job="node"}[10s])
+process_open_fds{instance="node-exporter:9100",job="node"}
+node_filefd_allocated{instance="node-exporter:9100",job="node"}
+irate(node_network_receive_packets_total{instance="node-exporter:9100",job="node"}[10s])
+irate(node_network_transmit_packets_total{instance="node-exporter:9100",job="node"}[10s])
+node_nf_conntrack_entries{instance="node-exporter:9100",job="node"}
+irate(node_softnet_processed_total{instance="node-exporter:9100",job="node"}[10s])
+irate(node_softnet_times_squeezed_total{instance="node-exporter:9100",job="node"}[10s])
+node_sockstat_TCP_alloc{instance="node-exporter:9100",job="node"}
+node_sockstat_TCP_mem{instance="node-exporter:9100",job="node"}
+node_sockstat_TCP_orphan{instance="node-exporter:9100",job="node"}
+node_sockstat_UDP_mem{instance="node-exporter:9100",job="node"}
+node_sockstat_TCP_mem_bytes{instance="node-exporter:9100",job="node"}
+node_sockstat_UDP_mem_bytes{instance="node-exporter:9100",job="node"}
+node_sockstat_sockets_used{instance="node-exporter:9100",job="node"}
+irate(node_netstat_IpExt_InOctets{instance="node-exporter:9100",job="node"}[10s])
+irate(node_netstat_IpExt_OutOctets{instance="node-exporter:9100",job="node"}[10s])
+irate(node_netstat_Tcp_InSegs{instance="node-exporter:9100",job="node"}[10s])
+irate(node_netstat_Tcp_OutSegs{instance="node-exporter:9100",job="node"}[10s])
+irate(node_netstat_Tcp_RetransSegs{instance="node-exporter:9100",job="node"}[10s])
+node_netstat_Tcp_CurrEstab{instance="node-exporter:9100",job="node"}
+node_scrape_collector_duration_seconds{instance="node-exporter:9100",job="node"}
+key
+average
+91816a2a5d41_stressType
+91816a2a5d41_stepStress
+2dfaefa527fe_stressType
+2dfaefa527fe_stepStress
+f7b9c8e16642_stressType
+f7b9c8e16642_stepStress
+5e605be64a74_stressType
+5e605be64a74_stepStress
+daaceef6bcea_stressType
+daaceef6bcea_stepStress
+ffa8d0a74f9f_stressType
+ffa8d0a74f9f_stepStress
+b53cb43385c7_stressType
+b53cb43385c7_stepStress
+96acc5da660b_stressType
+96acc5da660b_stepStress
