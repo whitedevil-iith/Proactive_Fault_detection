@@ -154,5 +154,11 @@ cython_debug/
 *.csv
 
 DATASET/
-oran-sc-ric/
-srsRAN_Project/
+
+# Ignore the folders at the root level
+/oran-sc-ric/
+/srsRAN_Project/
+
+# Do not ignore the folders under setup/
+!setup/oran-sc-ric/
+!setup/srsRAN_Project/
