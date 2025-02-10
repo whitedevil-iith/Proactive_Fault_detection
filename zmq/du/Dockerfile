@@ -81,13 +81,11 @@ RUN cd /usr/src/gtest && \
     mv lib/*.a /usr/lib
 
 # Clone the srsRAN repository
-RUN git clone https://github.com/srsRAN/srsRAN_Project.git /opt/srsRAN_Project && \
-    cd /opt/srsRAN_Project && \
-    git checkout release_24_10
+RUN git clone https://github.com/srsRAN/srsRAN_Project.git /opt/srsRAN_Project
 
 # Build and install srsRAN
 WORKDIR /opt/srsRAN_Project
-RUN git checkout release_23_10 && \
+RUN git checkout e5d5b44b9 && \
     mkdir build && cd build && \
     # Uncomment the following line if using ZMQ
     cmake ../ -DDU_SPLIT_TYPE=SPLIT_8 -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON && \

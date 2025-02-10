@@ -77,9 +77,9 @@ RUN git clone https://github.com/srsRAN/srsRAN_Project.git /opt/srsRAN_Project
 
 # Build and install srsRAN
 WORKDIR /opt/srsRAN_Project
-RUN git checkout release_23_10 && \
+RUN git checkout e5d5b44b9 && \
     mkdir build && cd build && \
-    cmake -DDU_SPLIT_TYPE=SPLIT_7_2 ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON && \
+    cmake -DDU_SPLIT_TYPE=SPLIT_8 ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON && \
     make -j$(nproc) && \
     make test -j$(nproc) || true && \
     make install && \
