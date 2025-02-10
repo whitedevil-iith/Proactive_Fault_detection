@@ -162,3 +162,4 @@ DATASET/
 # Do not ignore the folders under setup/
 !setup/oran-sc-ric/
 !setup/srsRAN_Project/
+!setup/srsRAN_Project/subscriber_db.csv
